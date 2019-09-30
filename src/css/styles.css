@@ -51,3 +51,10 @@
   grid-area: areaF;
   background: #88f;
 }
+
+/* コンテナC */
+#containerC {
+  display: grid;
+  grid-template-rows: 200px 100px;
+  grid-template-columns: 200px 100px 100px;
+}
