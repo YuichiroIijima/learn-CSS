@@ -57,4 +57,12 @@
   display: grid;
   grid-template-rows: 200px 100px;
   grid-template-columns: 200px 100px 100px;
+  grid-auto-flow: column;
+}
+
+/* コンテナD */
+#containerD {
+  display: grid;
+  grid-template-rows: 200px 100px;
+  grid-template-columns: 200px 100px 100px;
 }
