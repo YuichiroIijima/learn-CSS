@@ -28,3 +28,26 @@
   transform: translateX(300px);
   background: #ff0000;
 }
+
+.box-keyframe {
+  width: 100px;
+  height: 100px;
+  background: green;
+  animation: rotation 2s ease 0s 1 alternate none running;
+}
+
+@keyframes rotation {
+  0% {
+    transform: scale(0.3);
+  }
+
+  50% {
+    transform: scale(0.6) rotate(-45deg);
+    background: red;
+  }
+
+  100% {
+    transform: scale(1) rotate(180deg);
+    background: blue;
+  }
+}
