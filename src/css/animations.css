@@ -33,7 +33,7 @@
   width: 100px;
   height: 100px;
   background: green;
-  animation: rotation 2s ease 0s 1 alternate none running;
+  animation: rotation 4s ease 0s 1 alternate none running;
 }
 
 @keyframes rotation {
