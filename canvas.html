@@ -1,44 +1,45 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>canvas tutorial</title>
+    <meta charset="UTF-8" />
+    <style>
+      #canvas {
+        background: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="canvas" width="640" height="400"></canvas>
+    <script>
+      function onDown(e) {
+        console.log("down");
+      }
 
-<head>
-	<title>canvas tutorial</title>
-	<meta charset="UTF-8" />
-  <style>
-    #canvas {
-      background: #666;
-    }
-  </style>
-</head>
-<body>
-	<canvas id="canvas" width="640" height="400"></canvas>
-  <script>
-    function onDown(e) {
-      console.log("down");
-    }
+      function onUp(e) {
+        console.log("up");
+      }
 
-    function onUp(e) {
-      console.log("up");
-    }
+      function onclick(e) {
+        console.log("click");
+        let x = e.clientx - canvas.offsetLeft;
+        let y = e.clientY - canvas.offsetTop;
+        console.log("x:", x, "y:", y);
+      }
 
-    function onclick(e) {
-      console.log("click");
-    }
+      function onOver(e) {
+        console.log("mouseover");
+      }
 
-    function onOver(e) {
-      console.log("mouseover");
-    }
+      function onOut() {
+        console.log("mouseout");
+      }
 
-    function onOut() {
-      console.log("mouseout");
-    }
-
-    canvas.addEventListener("mousedown", onDown, false);
-    canvas.addEventListener("mouseup", onUp, false);
-    canvas.addEventListener("click", onclick, false);
-    canvas.addEventListener("mouseover", onOver, false);
-    canvas.addEventListener("mouseout", onOut, false);
-  </script>
-</body>
-
+      canvas.addEventListener("mousedown", onDown, false);
+      canvas.addEventListener("mouseup", onUp, false);
+      canvas.addEventListener("click", onclick, false);
+      canvas.addEventListener("mouseover", onOver, false);
+      canvas.addEventListener("mouseout", onOut, false);
+    </script>
+  </body>
 </html>
