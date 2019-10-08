@@ -13,6 +13,31 @@
 <body>
 	<canvas id="canvas" width="640" height="400"></canvas>
   <script>
+    function onDown(e) {
+      console.log("down");
+    }
+
+    function onUp(e) {
+      console.log("up");
+    }
+
+    function onclick(e) {
+      console.log("click");
+    }
+
+    function onOver(e) {
+      console.log("mouseover");
+    }
+
+    function onOut() {
+      console.log("mouseout");
+    }
+
+    canvas.addEventListener("mousedown", onDown, false);
+    canvas.addEventListener("mouseup", onUp, false);
+    canvas.addEventListener("click", onclick, false);
+    canvas.addEventListener("mouseover", onOver, false);
+    canvas.addEventListener("mouseout", onOut, false);
   </script>
 </body>
 
