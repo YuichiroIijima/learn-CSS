@@ -1,56 +1,32 @@
 <!DOCTYPE html>
 <html>
   <head>
-      <link rel="stylesheet" href="./src/css/topPage.css">
+    <link rel="stylesheet" href="./src/css/hamburgerMenu.css" />
   </head>
   <body>
-    <header id="global-head">
-      <h1 id="brand-log">Logo</h1>
-    </header>
+    <div id="navArea">
+      <nav>
+        <div class="inner">
+          <ul>
+            <li><a href="#">Text</a></li>
+            <li><a href="#">Text</a></li>
+            <li><a href="#">Text</a></li>
+          </ul>
+        </div>
+      </nav>
 
-    <div id="nav-toggle">
-      <div>
+      <div class="toggle_btn">
         <span></span>
         <span></span>
         <span></span>
       </div>
+
+      <div id="mask"></div>
     </div>
 
-    <aside id="sidebar">
-      <nav id="global-nav">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li class="sub-menu">
-            <a href="#" class="sub-menu-head">About</a>
-            <ul class="sub-menu-nav">
-              <li><a href="#">About 1</a></li>
-              <li><a href="#">About 2</a></li>
-              <li><a href="#">About 3</a></li>
-            </ul>
-          </li>
-          <li class="sub-menu">
-            <a href="#" class="sub-menu-head">Products</a>
-            <ul class=sub-menu-nav">
-              <li></li><a href="#"Products 1></a></li>
-              <li></li><a href="#"Products 2></a></li>
-              <li></li><a href="#"Products 3></a></li>
-            </ul>
-          </li>
-          <li><a href="#">Link</a></li>
-          <li><a href="#">Content</a></li>
-        </ul>
-      </nav>
-    </aside>
-
-    <main id="main">
-      <div id="main-in">
-        <div id="main-visual">
-          <h2>Fixed Sidebar</h2>
-        </div>
-      </div>
+    <main>
+      <h1>hamburger Menu</h1>
     </main>
-
-    <div id="overlay"></div>
 
     <ul>
       <li>
@@ -74,5 +50,6 @@
         </div>
       </li>
     </ul>
+    <script src="../src/js/hamburgerMenu.js"></script>
   </body>
 </html>
